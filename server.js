@@ -72,5 +72,5 @@ const searchWeatherData = (query) => {
 
 function Weather(data){
     this.forecast = data.summary;
-    this.time = new Date(data.time);
+    this.time = new Date(data.time * 1000);
 }
